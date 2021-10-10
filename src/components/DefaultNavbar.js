@@ -21,11 +21,11 @@ export default function DefaultNavbar() {
             <NavbarContainer>
                 <NavbarWrapper>
                     <a
-                        href="https://material-tailwind.com?ref=mtk"
-                        target="_blank"
-                        rel="noreferrer"
+                        href="http://localhost:3000/#pablo"
+                       
+                       
                     >
-                        <NavbarBrand>Material Tailwind</NavbarBrand>
+                        <NavbarBrand>Djerba Towers</NavbarBrand>
                     </a>
                     <NavbarToggler
                         onClick={() => setOpenNavbar(!openNavbar)}
@@ -38,7 +38,7 @@ export default function DefaultNavbar() {
                         <div className="flex flex-col z-50 lg:flex-row lg:items-center">
                             <NavLink
                                 href="https://material-tailwind.com/documentation/quick-start?ref=mtk"
-                                target="_blank"
+                                // target="_blank"
                                 rel="noreferrer"
                                 ripple="light"
                             >
@@ -47,15 +47,33 @@ export default function DefaultNavbar() {
                             </NavLink>
                             <NavLink
                                 href="https://material-tailwind.com/components?ref=mtk"
-                                target="_blank"
+                                // target="_blank"
                                 rel="noreferrer"
                                 ripple="light"
                             >
                                 <Icon name="apps" size="2xl" />
                                 &nbsp;Components
                             </NavLink>
+                            <NavLink
+                                href="https://material-tailwind.com/components?ref=mtk"
+                                // target="_blank"
+                                rel="noreferrer"
+                                ripple="light"
+                            >
+                                <Icon name="apps" size="2xl" />
+                                &nbsp;Notre equipe
+                            </NavLink>
+                            <NavLink
+                                href="https://material-tailwind.com/components?ref=mtk"
+                                // target="_blank"
+                                rel="noreferrer"
+                                ripple="light"
+                            >
+                                <Icon name="apps" size="2xl" />
+                                &nbsp;About us
+                            </NavLink>
                             <div className="text-white">
-                                <Dropdown
+                                {/* <Dropdown
                                     color="transparent"
                                     size="sm"
                                     buttonType="link"
@@ -93,9 +111,9 @@ export default function DefaultNavbar() {
                                             Register
                                         </DropdownItem>
                                     </Link>
-                                </Dropdown>
+                                </Dropdown> */}
                             </div>
-                            <NavLink
+                            {/* <NavLink
                                 href="https://github.com/creativetimofficial/material-tailwind?ref=mtk"
                                 target="_blank"
                                 rel="noreferrer"
@@ -107,16 +125,16 @@ export default function DefaultNavbar() {
                                     size="xl"
                                 />
                                 &nbsp;Github
-                            </NavLink>
-                            <NavLink
+                            </NavLink> */}
+                            {/* <NavLink
                                 href="https://github.com/creativetimofficial/material-tailwind/issues?ref=mtk"
                                 target="_blank"
                                 rel="noreferrer"
                                 ripple="light"
                             >
                                 Issues
-                            </NavLink>
-                            <a
+                            </NavLink> */}
+                            {/* <a
                                 href="https://www.creative-tim.com/product/material-tailwind-kit-react"
                                 target="_blank"
                                 rel="noreferrer"
@@ -128,7 +146,7 @@ export default function DefaultNavbar() {
                                 >
                                     Free Download
                                 </Button>
-                            </a>
+                            </a> */}
                         </div>
                     </Nav>
                 </NavbarCollapse>
