@@ -277,6 +277,14 @@ button {
   background-color: transparent;
   background-image: none;
 }
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 fieldset {
   margin: 0;
   padding: 0;
@@ -339,7 +347,7 @@ body {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: currentColor; /* 2 */
+  border-color: #e5e7eb; /* 2 */
 }
 /*
  * Ensure horizontal rules are visible by default
@@ -365,21 +373,11 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
-  color: #adaf9c;
+  color: #9ca3af;
 }
 button,
 [role="button"] {
   cursor: pointer;
-}
-/**
- * Override legacy focus reset from Normalize with modern Firefox focus styles.
- *
- * This is actually an improvement over the new defaults in Firefox in our testing,
- * as it triggers the better focus styles even for links, which still use a dotted
- * outline in Firefox by default.
- */
-:-moz-focusring {
-	outline: auto;
 }
 table {
   border-collapse: collapse;
@@ -430,20 +428,11 @@ samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 /**
- * 1. Make replaced elements `display: block` by default as that's
- *    the behavior you want almost all of the time. Inspired by
- *    CSS Remedy, with `svg` added as well.
+ * Make replaced elements `display: block` by default as that's
+ * the behavior you want almost all of the time. Inspired by
+ * CSS Remedy, with `svg` added as well.
  *
- *    https://github.com/mozdevs/cssremedy/issues/14
- * 
- * 2. Add `vertical-align: middle` to align replaced elements more
- *    sensibly by default when overriding `display` by adding a
- *    utility like `inline`.
- *
- *    This can trigger a poorly considered linting error in some
- *    tools but is included by design.
- * 
- *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
+ * https://github.com/mozdevs/cssremedy/issues/14
  */
 img,
 svg,
@@ -453,8 +442,8 @@ audio,
 iframe,
 embed,
 object {
-  display: block; /* 1 */
-  vertical-align: middle; /* 2 */
+  display: block;
+  vertical-align: middle;
 }
 /**
  * Constrain images and videos to the parent width and preserve
@@ -466,12 +455,6 @@ img,
 video {
   max-width: 100%;
   height: auto;
-}
-/**
- * Ensure the default browser behavior of the `hidden` attribute.
- */
-[hidden] {
-  display: none;
 }
 *, ::before, ::after{
 	--tw-translate-x: 0;
@@ -795,7 +778,7 @@ video {
 	background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 }
 .bg-landing-background{
-	background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url(https://pbs.twimg.com/media/DeMdehMXkAAT_Iq.jpg);
+	background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url(https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80);
 }
 .bg-login-background{
 	background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url('/src/assets/img/background-1920x1280.jpg');
