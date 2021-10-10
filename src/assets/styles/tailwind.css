@@ -778,7 +778,7 @@ video {
 	background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 }
 .bg-landing-background{
-	background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url(https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80);
+	background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url(https://i.pinimg.com/originals/23/03/33/2303330b3259e0d745b1f6c2ead2782a.jpg);
 }
 .bg-login-background{
 	background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url('/src/assets/img/background-1920x1280.jpg');
