@@ -13,36 +13,39 @@ import kite from 'assets/img/kite.jpg';
  import plonge from 'assets/img/plonge.jpg';
  import parachute from 'assets/img/parachute.jpg';
  import jetski from 'assets/img/jetski.jpg';
+ import ReactPlayer from 'react-player'
 // import cheval from 'assets/img/cheval.jpg';
 export default function WorkingSection() {
     return (
-        <section style={{backgroundColor:"#faedcd"}} className="pb-20 bg-gray-100 -mt-32">
+        <section style={{backgroundColor:""}} className="pb-20 bg-gray-100 -mt-32">
             <div className="container max-w-7xl mx-auto px-4">
-                <div  className="flex flex-wrap relative z-50">
-                    <StatusCard   color="red" icon="stars" title="Une meilleur qualité ">
+                <div style={{display:'flex', justifyContent:'center'}} className="flex flex-wrap relative z-50">
+                    {/* <StatusCard   color="red" icon="stars" title="Une meilleur qualité ">
                     Connaître et comprendre les besoins du client est au centre de toute entreprise fructueuse, qu'elle vende directement à des personnes ou à d'autres entreprises. 
     
-                    </StatusCard>
+                    </StatusCard> */}
                     <StatusCard
-                        color="yellow"
+                        color="red"
                         icon="autorenew"
-                        title="votre reservation"
+                        title="dm didam"
                     >
-                        Votre service sera fournit à temps choisis par le client, aucun retard ou empechement agasse votre moment. 
+                        Lorum ipiduidm didamd lorum ip didamd tm liopsls  Lorum ipiduidm didamd lorum ipdutm liopsls uidm didamd lorum ipdutm liopsls  Lorum ipiduidm didamd lorum ipdutm liopsls uidm didamd lorum ipdutm liopsls .. 
                     </StatusCard>
-                    <StatusCard
+                    {/* <StatusCard
                         color="green"
                         icon="fingerprint"
                         title="Verified Company"
                     >
                        Une compangie verifié, respectueuse envers ses clients, 
-                    </StatusCard>
+                    </StatusCard> */}
                 </div>
-                <br />
-                  <div style={{justifyContent:'center', textAlign:'center'}} >
-                <H4>Take a Look 🕵️‍♀️  </H4>
+                <br /> <br /> 
+                  <div style={{justifyContent:'center', textAlign:'center',}} >
+                <H4>OFFICIAL TRAILER  </H4>
                 </div>
                 <div  className="flex flex-wrap items-center mt-32">
+
+                <ReactPlayer   width="100%"  url='https://www.youtube.com/watch?v=zSWdZVtXT7E' />
                    
                     {/* <div className="w-full md:w-5/12 px-4 mx-auto">
                         <div className="text-blue-gray-800 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
@@ -68,7 +71,7 @@ export default function WorkingSection() {
                         </a>
                     </div> */}
 
-                    <div   className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">
+                    {/* <div   className="w-full md:w-4/12 px-4 mx-auto flex justify-center mt-24 lg:mt-0">
                         <Card>
                             <CardImage alt="Card Image" src={Teamwork} />
                             <CardBody>
@@ -135,7 +138,7 @@ export default function WorkingSection() {
                                 </Paragraph>
                             </CardBody>
                         </Card>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

@@ -25,7 +25,7 @@ export default function DefaultNavbar() {
                        
                        
                     >
-                        <NavbarBrand>Djerba Towers</NavbarBrand>
+                        <NavbarBrand>Movie APP</NavbarBrand>
                     </a>
                     <NavbarToggler
                         onClick={() => setOpenNavbar(!openNavbar)}
@@ -43,7 +43,7 @@ export default function DefaultNavbar() {
                                 ripple="light"
                             >
                                 <Icon name="description" size="2xl" />
-                                &nbsp;Docs
+                                &nbsp;Trailer
                             </NavLink>
                             <NavLink
                                 href="https://material-tailwind.com/components?ref=mtk"
@@ -52,7 +52,7 @@ export default function DefaultNavbar() {
                                 ripple="light"
                             >
                                 <Icon name="apps" size="2xl" />
-                                &nbsp;Components
+                                &nbsp;News
                             </NavLink>
                             <NavLink
                                 href="https://material-tailwind.com/components?ref=mtk"
@@ -61,7 +61,7 @@ export default function DefaultNavbar() {
                                 ripple="light"
                             >
                                 <Icon name="apps" size="2xl" />
-                                &nbsp;Notre equipe
+                                &nbsp;Team
                             </NavLink>
                             <NavLink
                                 href="https://material-tailwind.com/components?ref=mtk"
