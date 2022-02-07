@@ -17,7 +17,7 @@ export default function TeamSection() {
             <div  className="container max-w-7xl mx-auto px-4">
                 <Title heading="Le Toucher Cast">
                     
-Lorum ipum ksjso didkla lorm odps ksjso didkla lorm o .
+
 
                 </Title>
                 <div className="flex flex-wrap">
