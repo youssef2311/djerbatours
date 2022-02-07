@@ -8,57 +8,68 @@ import Image5 from 'assets/img/Mackenzie-Foy.jpg';
 import img6 from 'assets/img/img6.jpg';
  import Image7 from 'assets/img/Image7.jpg';
  import Image8 from 'assets/img/image8.jpg';
+ import Background from '../../wetransfer_bande_annonce_le_toucher-mp4_2022-02-04_1835/Background.png'
+
 // import Image5 from 'assets/img/Mackenzie-Foy.jpg';
 export default function TeamSection() {
     return (
-        <section style={{backgroundColor:"#ffd7ba"}} className="pt-20 pb-48">
+        <section style={{ backgroundImage: `url(${Background})`, }} className="pt-20 pb-48">
             <div  className="container max-w-7xl mx-auto px-4">
-                <Title heading="Interstealler Cast">
+                <Title heading="Le Toucher Cast">
                     
 Lorum ipum ksjso didkla lorm odps ksjso didkla lorm o .
 
                 </Title>
                 <div className="flex flex-wrap">
-                    <TeamCard
+                    {/* <TeamCard
                         img={Image1}
-                        name="Christopher Nolan"
-                        position="Réalisateur"
-                    />
+                        name="Moez Kamoun"
+                        position="Producteur "
+                    /> */}
+                   
                     <TeamCard
+                        img={Image4}
+                        name="Emna Kouki"
+                        position="Actrice"
+                    />
+                            <TeamCard
+                        img={Image7}
+                        name="Rabeb Srairi"
+                        position="Actrice"
+                    />
+                         <TeamCard
                         img={Image2}
-                        name="Matthew McConaughey"
+                        name="Lotfi Bondka"
                         position="Acteur"
                     />
                     <TeamCard
                         img={Image3}
-                        name="Anne Hathaway"
+                        name="wahida Dridi"
                         position="Actrice"
                     />
-                    <TeamCard
-                        img={Image4}
-                        name="Jessica Chastain"
-                        position="Actrice"
-                    />
-                           <TeamCard
-                        img={Image5}
-                        name="Mackenzie Foy"
-                        position="Actrice"
-                    />
-                           <TeamCard
-                        img={img6}
-                        name="Michael Caine"
-                        position="Acteur"
-                    />
-                           <TeamCard
+                        
+                        
+                           {/* <TeamCard
                         img={Image7}
-                        name="Wes Bentley"
-                        position="Acteur"
-                    />
-                           <TeamCard
+                        name="Rabeb Srairi"
+                        position="Actrice"
+                    /> */}
+                           {/* <TeamCard
                         img={Image8}
                         name="Hans Zimmer"
                         position="Compositeur de musique de film"
+                    /> */} <br />
+                    <div style={{display:'flex', justifyContent:'center'}}>
+                    <TeamCard
+                        img={img6}
+                        name="Hamza Neji"
+                        position="Acteur"
                     />
+                       <TeamCard
+                        img={Image5} 
+                        name="Ahmed Ferchichi"
+                        position="Acteur"
+                    /></div>
                 </div>
             </div>
         </section>

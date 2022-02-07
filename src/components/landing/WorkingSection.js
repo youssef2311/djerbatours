@@ -13,24 +13,30 @@ import kite from 'assets/img/kite.jpg';
  import plonge from 'assets/img/plonge.jpg';
  import parachute from 'assets/img/parachute.jpg';
  import jetski from 'assets/img/jetski.jpg';
- import ReactPlayer from 'react-player'
+ import ReactPlayer from 'react-player';
+ import Background from '../../wetransfer_bande_annonce_le_toucher-mp4_2022-02-04_1835/Background.png'
 // import cheval from 'assets/img/cheval.jpg';
 export default function WorkingSection() {
     return (
-        <section style={{backgroundColor:""}} className="pb-20 bg-gray-100 -mt-32">
+        <section style={{ backgroundImage: `url(${Background})`,}}  className="pb-20 bg-gray-100 -mt-32">
             <div className="container max-w-7xl mx-auto px-4">
                 <div style={{display:'flex', justifyContent:'center'}} className="flex flex-wrap relative z-50">
                     {/* <StatusCard   color="red" icon="stars" title="Une meilleur qualité ">
                     Connaître et comprendre les besoins du client est au centre de toute entreprise fructueuse, qu'elle vende directement à des personnes ou à d'autres entreprises. 
     
                     </StatusCard> */}
-                    <StatusCard
+                    {/* <StatusCard
                         color="red"
                         icon="autorenew"
-                        title="dm didam"
+                        title="Resume"
                     >
-                        Lorum ipiduidm didamd lorum ip didamd tm liopsls  Lorum ipiduidm didamd lorum ipdutm liopsls uidm didamd lorum ipdutm liopsls  Lorum ipiduidm didamd lorum ipdutm liopsls uidm didamd lorum ipdutm liopsls .. 
-                    </StatusCard>
+                    
+Hager la trentaine et mignonne. Elle travaille dans un hôpital. Elle fait la connaissance d’un brancardier, charmée, elle engage une relation sérieuse jusqu’au jour où il commet l’irréparable et la viole.
+
+Sa mère veut étouffer l’affaire et lui trouve un mari aveugle de bonne famille en quête de mariage. Le lendemain de la nuit de noce, il comprendra qu’il n’est pas le premier. Une fois le couple installé loin de la ville, un enfant prend forme dans son ventre. Quoique la date ne corresponde pas au jour de leur union .
+
+
+                    </StatusCard> */}
                     {/* <StatusCard
                         color="green"
                         icon="fingerprint"
@@ -39,13 +45,13 @@ export default function WorkingSection() {
                        Une compangie verifié, respectueuse envers ses clients, 
                     </StatusCard> */}
                 </div>
-                <br /> <br /> 
-                  <div style={{justifyContent:'center', textAlign:'center',}} >
+                <br /> <br />  <br /> <br />  
+                  <div style={{justifyContent:'center', textAlign:'center', color:'white'}} >
                 <H4>OFFICIAL TRAILER  </H4>
                 </div>
                 <div  className="flex flex-wrap items-center mt-32">
 
-                <ReactPlayer   width="100%"  url='https://www.youtube.com/watch?v=zSWdZVtXT7E' />
+                <ReactPlayer   width="100%"  url='https://www.youtube.com/watch?v=4ZaKP_UaqXQ' />
                    
                     {/* <div className="w-full md:w-5/12 px-4 mx-auto">
                         <div className="text-blue-gray-800 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">

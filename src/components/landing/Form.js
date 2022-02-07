@@ -11,36 +11,38 @@ import H6 from "@material-tailwind/react/Heading6";
 
 export default function Form() {
     return (
-        <div style={{backgroundColor:'#a4133c'}} className="flex flex-wrap justify-center mt-24">
+        <div style={{backgroundColor:'#e9ecef'}} className="flex flex-wrap justify-center mt-24">
             <div className="w-full lg:w-8/12 px-4">
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6">
                     <div className="flex-auto p-5 lg:p-10">
                         <div className="w-full text-center">
-                            <H3 color="gray">OVERVIEW</H3>
-                            <Paragraph color="gray">
+                            <H3 color="black">Press</H3>
+                            <Paragraph color="black">
                                 On essaiyera  de vous repondre dans le plus proche delais.
-                            </Paragraph>
+                            </Paragraph> 
+                            <br />
                         </div>
                         <form onSubmit={(e) => e.preventDefault()}>
 
                             <div >
                             <Card>
+                            <a href='https://lapresse.tn/102545/fin-de-tournage-de-le-toucher-de-moez-kamoun-un-film-qui-fouille-la-psychologie-de-ses-personnages/'>
             <CardImage
-                src="https://www.expressandstar.com/resizer/6xCaXPpf88gLdtS3VKtumOSuyRQ=/1200x0/cloudfront-us-east-1.images.arcpublishing.com/mna/ZBZ5T324ARGVZBDWRI5SS3KBNM.jpg"
+            
+                src="https://i1.wp.com/lapresse.tn/wp-content/uploads/2021/07/moez-kamoun.jpg?fit=850%2C491&ssl=1"
                 alt="Card Image"
-            />
+            /></a>
 
             <CardBody>
                 <H6 color="gray">Card Title</H6>
                 <Paragraph color="gray">
-                    Don't be scared of the truth because we need to restart the human
-                    foundation in truth And I love you like Kanye loves Kanye I love
-                    Rick Owens’ bed design but the back is...
+                Moëz Kamoun vient de mettre fin à son cinquième long métrage de fiction «Le toucher» avec pour tête d’affiche Emna Kouki, Hamza Negi et Ahmed Ferchichi. Il nous en parle.
+Il s’agit d’un drame social dont la durée est de 87 minutes . Il a été tourné en 2021 en Tunisie . Pour résumer, c’est l’histoire d’une infirmière et d’un brancardier qui a mal tourné , ce qui a conduit la mère de l’infirmière à la marier à un non-voyant pour faire taire les mauvaises langues , mais son passé la rattrape toujours.
                 </Paragraph>
             </CardBody>
 
             <CardFooter>
-                <Button color="red" size="lg" ripple="light">
+                <Button  style={{backgroundColor:'black'}} size="lg" ripple="light" href="#https://lapresse.tn/102545/fin-de-tournage-de-le-toucher-de-moez-kamoun-un-film-qui-fouille-la-psychologie-de-ses-personnages/">
                         See More
                 </Button>
             </CardFooter>
